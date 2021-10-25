@@ -1,0 +1,349 @@
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* css Variable */
+:root {
+  --navbar-height: 59px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* background-color: lightsalmon; */
+  background-color: blanchedalmond;
+  /* position: relative; */
+}
+
+/* navigation bar */
+#navbar {
+  position: sticky;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  background-color: rgb(201, 184, 172);
+  border: 5px ridge saddlebrown;
+  /* opacity: .6; */
+  border-radius: 200px;
+  
+
+  /* height: fit-content; */
+  /* justify-content: center; */
+}
+/* #navbar::before {
+  background-color: black;
+  content: "";
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.8;
+  margin: 0px 0px;
+  
+} */
+
+/* navigation bar :logo and image*/
+/* navigation bar :List styling*/
+#logo {
+  margin: 12px 12px;
+}
+#logo img {
+  margin: 4px 8px;
+  height: 60px;
+  width: 60px;
+  transition: 0s steps(1);
+
+}
+#logo img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+ul#navbarul {
+  list-style: none;
+  display: flex;
+  padding: 0px 10px;
+  font-family: "Oswald", sans-serif;
+  /* background-color: blanchedalmond; */
+}
+
+#navbar ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 20px 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 20px;
+  transition: 0.1s linear;
+}
+#navbar ul li a:hover {
+  color: beige;
+  text-shadow: 5px 5px 40px black;
+  background-color: black;
+  /* transform: skew(8deg) ; */
+  transform: translatey(10px);
+  /* transform: scale(1.2); */
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 200px;
+  text-shadow: darkgrey;
+  font-size: larger;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url("/project2/img/food2.jpg") no-repeat center center/cover;
+  /* background-repeat: no-repeat; */
+  position: absolute;
+  height: 76%;
+  width: 100%;
+  z-index: -1;
+  /* opacity: 0; */
+}
+#home h1 {
+  color: rgb(22, 9, 9);
+  align-items: center;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+#home h1:hover {
+  text-shadow: gainsboro;
+}
+#home p {
+  color: rgb(22, 17, 17);
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Baloo Tammudu 2", cursive;
+  line-height: 1;
+}
+#home button:hover {
+  color: rgb(209, 81, 81);
+  background-color: whitesmoke;
+}
+
+/* Services Section */
+
+/* #services{} */
+#services {
+  margin: 50px 40px;
+  display: flex;  
+}
+#services .box {
+  border: 2px solid brown;
+  width: 30vw;
+  padding: 34px;
+  background-color: #f9ccba;
+  margin: 10px;
+  border-radius: 28px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#services .box img {
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  border: 4px solid rgb(224, 135, 18);
+
+  display: block;
+  margin: auto;
+  
+
+  box-shadow: 4px 4px orange;
+}
+.box p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.45rem;
+}
+                              /* clients section */
+
+#client-section {
+  height: 500px;
+}
+#clients {
+  height: 500px;
+}
+#clients .c_image {
+  margin: 20px;
+  padding: 20px 30px;
+  /* border: 2px solid rgb(233 176 32); */
+  border-radius: 150px;
+  height: 150px;
+  width: 170px;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s;
+  opacity: 1;
+  /* background-color: brown; */
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../img/food2.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 500px;
+  z-index: -1;
+  opacity: 0.4;
+}
+#clients .c_image:hover {
+  /* transform:rotate(360deg); */
+  /* background-color: rgb(100, 26, 26); */
+  border-color: 8px solid rgb(248, 246, 244);
+  transform: scale(1.7);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) .2s;
+  transform: rotate(-30deg) ;
+  transform:translateY(-30px);
+
+  box-shadow: 9px 10px rgb(47, 36, 22);
+  
+
+  
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: palegoldenrod; */
+  opacity: 0.8;
+}
+                                                /* contact section */
+#contact{
+position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  z-index: -1;
+  opacity: .8;
+  background: url(../img/contact.jpg) no-repeat center center/cover;
+
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 545px;
+}
+#contact-box input{
+  height: 35px;
+  width: 548px;
+  padding: 3px;
+  padding-left: 14px;
+  border-radius: 30px;
+  font-size: 1.25rem;
+  size: 20px;
+}
+#contact-box label{
+  height: 35px;
+  width: 307px;
+  color: antiquewhite;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 22px;
+}
+#contact-box textarea{
+  border-radius: 10px;
+  width: 548px;
+  padding-left: 14px;
+  font-size: 1.25rem;
+}
+#contact-box .form-lines{
+  margin: 3px;
+}
+
+.btn_contact{
+  display: block;
+  margin: auto;
+  width: 80px;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  border: 3px solid black;
+}
+.btn_contact:hover{
+cursor: pointer;
+background-color: grey;
+}
+                                          /* footer */
+footer{
+  background-color: black;
+  color:cornsilk ;
+  font-weight: bold;
+  padding: 9px 20px;
+  font-size: 17px;
+}
+
+
+                                      /* utility classes */
+
+/* #service-h-main{
+
+}                                           */
+
+.image:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+/* h2:hover{
+  transform: translate(20);
+
+} */
+h2 {
+  position: relative;
+}
+.h-primary {
+  font-size: 3.3rem;
+  padding: 12px;
+  font-family: "Oswald", sans-serif;
+  /* display: inline;
+  position:relative; */
+
+  /* margin: 100px; */
+  /* text-align: center; */
+  /* text-shadow:12px whitesmoke ; */
+}
+.h-secondary {
+  font-size: 2rem;
+  text-shadow: 2px 2px lightslategray;
+  padding: 12px;
+  font-family: "Oswald", sans-serif;
+  text-decoration: underline;
+}
+.h-secondary:hover {
+  transform: translate(20);
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  background-color: rgb(209, 81, 81);
+  color: whitesmoke;
+  margin: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+.text-white{
+  /* text-shadow: 3px 3px white; */
+  color: aliceblue;
+  }
